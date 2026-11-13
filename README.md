@@ -11,7 +11,7 @@ A project template for building on **Microsoft Fabric** with **Claude Code in VS
 | `.claude/skills/` | Three small project skills: safe changes, new workspace, conventions |
 | `workspaces/` | One folder per Fabric workspace (copy `_template-workspace/`) |
 | `shared/` | Things that span workspaces: governance, CI/CD, OneLake |
-| `docs/` | Getting started, MCP and skills guide, architecture, item catalog, naming, runbook |
+| `docs/` | Ways to use it, getting started, MCP and skills guide, architecture, item catalog, naming, runbook |
 | `content/` | Optional notes and recordings if you teach or document your work |
 
 Microsoft's official **Skills for Fabric** are not copied here; `docs/mcp-and-skills.md` shows how to install them so they stay up to date.
@@ -42,13 +42,24 @@ fabric-claude-code-template/
   content/
 ```
 
+## Choose how you will use it
+
+| You are... | Do this |
+|---|---|
+| Starting fresh on GitHub | Click **Use this template**, then clone your new repo |
+| Working locally, no Git | **Code > Download ZIP**, unzip, open in VS Code |
+| Adding to your org's existing repo | Copy only the pieces you need (see the guide), don't merge the whole template |
+| Already using Fabric Git integration | Keep your existing connection; use the template around it |
+
+Details and cautions: [docs/ways-to-use.md](docs/ways-to-use.md).
+
 ## Quick start
 
-1. Click **Use this template** (or copy the folder) and name your project.
+1. Get the folder using one of the options above.
 2. Open the project folder in VS Code and read `docs/getting-started.md`.
 3. Start Claude Code in the folder and approve the project MCP server when asked.
 4. Copy `workspaces/_template-workspace/` to `workspaces/<YourWorkspace>/` and fill in its `CLAUDE.md` and `README.md` (or just ask Claude to run the `fabric-new-workspace` skill).
-5. Connect that Fabric workspace to Git with the **Git folder** set to `workspaces/<YourWorkspace>/items`.
+5. **Optional, only if you use Fabric Git integration:** connect that Fabric workspace to Git with the **Git folder** set to `workspaces/<YourWorkspace>/items`. If it is already connected, leave it as it is.
 
 ## Why one folder per workspace
 
