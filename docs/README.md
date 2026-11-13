@@ -1,6 +1,7 @@
 # docs
 
 - ways-to-use.md - new repo, local only, existing org repo, and Fabric Git integration
+- first-prompt.md - the prompt to paste into Claude Code to set up a new project
 - getting-started.md - first-day setup
 - mcp-and-skills.md - which MCP servers and skills to use, and how to install them
 - architecture.md - the big picture and layers
